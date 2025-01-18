@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #C1A7D6, #F8D0D6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    overflow-y: auto;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #C1A7D6;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #4E4A7F;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: scaleUp 1.5s ease-in-out;
+    border: 5px solid #C1A7D6;
+}
+
+section {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #4E4A7F;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section p, section ul {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 15px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C1A7D6;
+}
+
+.socials ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.socials ul li {
+    margin: 12px;
+}
+
+.socials a {
+    color: #333;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.socials a:hover {
+    color: #4E4A7F;
+}
+
+.socials a i {
+    margin-right: 12px;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #999;
+    border-top: 2px solid #C1A7D6;
+    margin-top: auto;
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.tab-content {
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 1.5rem;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tab-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.tab-content p {
+    font-size: 1.6rem;
+}
+
+.tab-content ul {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .socials ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
